@@ -6,7 +6,7 @@
 
 N = int(input())
 f=1
-for i in range(1, N+1):
-        f=i*f
+for i in range(N):
         i=i+1
-        print(f)    
+        f=i*f
+        print(f, end= " ")    
