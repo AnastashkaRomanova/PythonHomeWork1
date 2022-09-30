@@ -5,12 +5,14 @@ from random import randint, random
 
 
 N = int(input())
-list = [randint(-N, N) for i in range(-N, N+1)]
+mult = 0
+list = [randint(-N, N) for i in range(N)]
 print(list)
 
-indexs = 'file.txt'
-file = open(indexs, 'r')
-for index in file:
 
+file = open('read.txt', 'r')
+for index in file:
     print(index)
+    mult*= list[int(index)]
 file.close()
+print(mult)
