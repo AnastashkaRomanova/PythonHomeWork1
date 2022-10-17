@@ -1,12 +1,11 @@
 # Задайте последовательность чисел. Напишите программу, 
 # которая выведет список неповторяющихся элементов исходной последовательности.
 
-from random import randint
+from random import randint, random
 
 N = int(input('Введите количество чисел в списке:'))
 
 new_list = []
-
 
 def get_list(list):
     for k in range(N):
