@@ -8,7 +8,7 @@ from bot_command import calculater
     
 
 
-app = ApplicationBuilder().token("5355352008:AAGpdjKisE0wLZPTzG9Mrw6i-NBQlRcDR3s").build()
+app = ApplicationBuilder().token("Token").build()
 
 app.add_handler(CommandHandler("hello", hello))
 # app.add_handler(MessageHandler(filters.TEXT, send_text))
